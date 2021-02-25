@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favivicon problem solved -->
+  <link rel="shortcut icon" href="">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&display=swap" rel="stylesheet">
+  <!-- FONT AWESOME ICONS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+  <!-- JQUERY CDN - INTERACTIVE CURSOR -->
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <title>Flora Hibberd</title>
+</head>
+<body>
+  <!-- CURSOR ANIMATION -->
+  <span id="circleCursor" class="circle-cursor"></span>
+  <div id="mainWrapper" class="main-wrapper">
+    <!--!SECTION SLIDEBAR -->     
+    <div id="slidebarWrapper" class="slidebar-wrapper">
+      <div class="main-slidebar">
+      <!-- YELLOW ARROW - SCROLL -->
+      <div id="scrollArrow">
+        <div class="arrow-scroll1"></div>
+          <div class="arrow-scroll2"></div>
+        </div>
+        <!-- ILLUSTRATION AMP - small screens -->
+        <div id="ampContainerPhone" class="amp-container-phone" style="display: none;">  
+          <a href="#">
+            <p class="il-play-phone" id="ilPlayPhone">PLAY</p>    
+            <img src="media/amp.png" alt="amplificadorImg" id= "ampPhone" class="amp-phone" width="60px">
+          </a>
+          <audio id="audioAmpPhone">
+            <source src="media/song-healing.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <!-- ILLUSTRATION PLATE - small screens -->
+        <div class="plate-container"  id="plateContainer">  
+          <p class="plate-play" id="platePlay" >PLAY</p>             
+          <img id="plateIl"src="media/ilplate.png" alt="plate-illustration" class="plate" width="110px"> 
+        </div>
+        <!-- TEXTS -->
+        <div class="texts-slidebar">
+          <!-- ? TEXT BIO -->
+          <p id="textBio" class="texts text-bio">
+            <span class="slidebar-title">Bio</span><br><br><br>
+            Born in East London but currently residing in Paris, Flora Hibberd has been described as:<br><br><br>
+            ‘It doesn’t get any better than this, haunting, beautiful
+            and timeless… I can’t wait to hear more.’<br>
+            <a href="https://www.folkradio.co.uk/" target="_blank"><strong>Folk Radio UK</strong></a><br><br><br><br>
+            ‘One of the foremost faces of a rising movement in contemporary folk music’<br><a href="https://www.forfolkssake.com/" target="_blank"><strong>For Folk’s Sake</strong></a> <br><br><br><br>
+            ‘A spectacular newcomer'<br><a href="https://www.beehivecandy.com/" target="_blank"><strong>Beehive Candy</strong> </a>
+            <br><br>
+          </p>
+          <!-- texts music albums -->
+          <div id="textsContainerAlbum" style="display: none;">
+            <!--? TEXT THE HEALING - ALBUM THE ABSENTEE-->
+            <div id= 'textHealing' class="texts" style="display: block;">
+              <span class="slidebar-title">The Healing</span><br><br><br>
+              <p>And I made some bad choices<br>There were some led astray<br>Loved nightly slept lightly<br>Washed my troubles away<br>Washed them in the white water<br>
+              Pushed them under pushed them in<br>And the candlelights are gleaming<br>But this darkness is within<br><br>O dark husband<br>I wait here where you should have been<br>And burn some holy oil<br>Hoping that something is forgiven<br><br>
+              O distant one<br>I am ready I am ready for the healing now to come<br>And I know that they are kneeling now<br>And I hear the static roar<br><br>Lover I have crossed over<br>And I see it all so new<br>And if you don’t know me now<br> Well you never really knew<br><br><br>
+              </p>
+            </div> 
+            <!--? TEXT SHINE - ALBUM TREE -->
+            <div id= 'textSignal' class="texts" style="display: none;">
+              <span class="slidebar-title">Shine A Signal</span><br><br><br>
+              <p>As you stare into<br>The open mouth of the world<br>I was trying to reach you all evening<br>But there’s still so much to learn<br>I tried to leave you behind<br>So many times but I return<br>Then the big moon rose up high and wild<br>And I am weak as a wave<br>Forever breaking on your shore<br><br>Wherever you are<br>I shine a signal<br>Whoever you are<br>I send a call<br>Mmmmmm<br><br>This is the end and the<br>Beginning and it’s time that is<br>Collapsing as you’re spinning out<br>To join the other planets<br>And your gravity pull<br>And your sunrise arms are waving now<br>And I cast it to the sky<br>I don’t ask why anymore<br>The mystery grows every day<br><br>Wherever you are<br>I shine a signal<br>Whoever you are<br>I send a call<br><br>I need you all the time<br>All the time<br><br><br>
+              </p>  
+            </div>        
+            <!--? TEXT ROCKS - ALBUM YELLOW -->
+            <p id= 'textRocks' class="texts" style="display: none;">
+              <span class="slidebar-title">To the rocks</span> <br><br><br>
+              It’s six o’clock and I’m on the cliff again<br>As another day sinks down on the world<br>And I’ve been here so long<br>I know the rock on the horizon like a song<br><br>But if I sung it now to you it would only make<br> you sad<br>Bring back that bad feeling that you had<br>And I couldn’t even hold you at the end<br>But it goes ooooh<br><br>It’s six o’clock and I’m on the cliff again<br>As another day sinks down on the world<br>And I’ve been here so long<br>I know the rock on the horizon like a song<br><br>
+            </p>
+            <!--? TEXT IN VIOLENCE - ALBUM HAND -->
+            <div  id="textViolence" class="texts" style="display: none;">
+              <span class="slidebar-title">In Violence</span><br><br><br>
+              <p>I hurried on<br>Heading for the glass river<br>I came upon<br>The woman that you carved<br>The headless one<br>Ripped from the red earth mother<br>To lie under the sun<br>To lie beneath the shadow of another<br><br>And your eye was empty<br>And your mouth it moved in silence<br>And everything she gave you<br>You returned to me in violence<br>But don’t you see don’t you see<br>I have known it all before<br>Known a thousand hands<br>My love like yours<br><br>Pushing in pushing in<br>O to summon up a storm<br>And the wind and the wind<br>Blowing black across the floor<br>It’s a sin it’s a sin<br>And the roar<br><br>O you<br>You are the night wind too<br>You have a wound like any other<br>Yes you are like so many others<br>Yes I have twisted ’neath the pin<br>And what a sacrifice to offer<br>As you dig the darkness in<br> <br> And yet still you call me lover<br>Draw your white chalk on the earth<br>So I draw my strength from the rest of them<br>And I spill my blood on the wretched dirt<br>To rub out your little sin<br>I cast out your little sin<br>It blew through me like the wind<br><br>Pushing in pushing in<br>And they summon up a storm<br>And the wind and the wind<br>And the wind how it roars<br>And the wind and the wind<br>As it tears across the floor<br>It’s a sin it’s a sin<br>It’s the white cross on the door <br><br>
+              </p>      
+            </div>
+          </div>
+          <!-- texts video and contacts-->
+          <!--? TEXT LONG - 1ST VIDEO -->
+          <div  id="textLong" class="texts" style="display: none;">
+            <span class="slidebar-title">As Long As There<br> Is Night</span><br><br>
+            <p>I was a saint on a balcony <br>Heaven blazing in my head <br>I knew you then as a sailor <br>Drifting deathless on the shore <br>And the river and the moon stood still <br>And the sea a silver bed <br>And I walked out in the dark town <br>I remember everything now <br>Though I have spent my days trying to forget <br>But how your body shines in the moonlight <br>I will make it mine for a while <br>As long as there is night and the grey wind sighs <br> And aching one <br>What is it burns within? <br>O come on I can feel it <br>The memory of skin <br>I watched it all from above <br>Saw the flames rise <br>And the holy dove <br>And the yellow skies <br>You call it love <br><br>But how your body shines in the moonlight<br>I will make it mine for a while<br>As long as there is night and the grey wind sighs <br> <br></p>
+          </div>
+          <!--? TEXT LET - 2ST VIDEO -->
+          <p id= 'textContact' class="texts" style="display: none;">
+            <span class="slidebar-title">I Let You Go</span><br><br>
+            Your house being the last<br>Before the infinite<br>Your body being the last<br>Body I’ve known<br>I’ve known them well<br>I’ve held them close<br>I let them go<br>I’ve known them well<br>I’ve held them close<br>I let them go<br><br>
+            I stumbled out of my bed<br>Into another day<br>Remembering what you had said<br>A long time ago<br>I’ve known you well<br>I’ve held you close<br>I let you go<br>I’ve known you well<br>I’ve held you close<br>I let you go<br><br>Drink coffee out on the porch<br>Scroll through the endless news<br>In Paris you’re still fast asleep<br>This much I know<br>I know you well<br>I held you close<br>I let you go<br>I know you well<br>I held you close<br>I let you go<br><br>Last year we would have been walking<br>To the neighbourhood bar<br>Another week end without you<br>Wherever you are<br>I knew you well<br>I held you close<br>I let you go<br>I knew you well<br>I held you close<br>I let you go<br><br>
+          </p>
+          <!--? TEXT SHENANDOAH - 3ST VIDEO -->
+          <p id="textShenandoah" class="texts" style="display: none;">
+            <span class="slidebar-title" >Shenandoah</span><br><br>
+            Shenandoah, how long will I miss you <br>Tonight you're far away as the Kentucky moon<br><br>And I know you hold a secret of mine or two<br>Tonight little darling my heart's with you<br><br>Wabash between us feel the cannon ball blues<br>Maybe I really did see the light<br>Halfway to heaven's fine<br>But I could not be sure<br>Halfway is all there ever was<br><br>And I know you hold a secret of yours or two <br>Tonight, little darlin, my heart's with you<br><br>There's just so much a man can miss<br>And just no end to what he can regret<br>
+            And I'm holding on to whatever hope shows through<br>Tonight little darling my heart's with you <br>Tonight little darling my heart's with you<br><br>
+          </p>
+        </div>
+      </div>
+      <div id="rightSlidebar" class="right-slidebar">
+        <div id="cursorSpace" class="cursor-space"></div>
+        <div id="slidebarIcon" class="slidebar-icon"></div>
+        <div id="slidebarSideTitles">
+          <ul id="slidebarSideTitleBio">
+            <li>B</li>
+            <li>I</li>
+            <li>0</li>
+          </ul>
+          <ul id="slidebarSideTitleLyrics" style="display: none;">
+            <li>L</li>
+            <li>Y</li>
+            <li>R</li>
+            <li>I</li>
+            <li>C</li>
+            <li>S</li>
+          </ul>
+        </div>
+        <div id="ampContainerSlide" class="amp-container-slide">    
+          <a href="#"> 
+            <p class="il-play-slide" id="ilPlaySlide">PLAY</p>
+            <img src="media/amp.png" alt="amplificadorImg" id= "ampSlide" class="amp-slide" width="40px">
+          </a>
+          <audio id="audioAmpSlide">
+            <source src="media/song-healing.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+    </div>
+    <!--!SECTION NAVBAR -->  
+    <div class="navbar">
+      <ul>
+        <li><a href="#" id="bio"><span id="decorationBio">Home</span></a></li>
+        <li><a href="#" id="music"><span id="decorationMusic">Albums</span></a></li>
+        <li><a href="#" id="video"><span id="decorationVideo">Video</span></a></li>
+        <li><a href="#" id="contact"><span id="decorationContact">Contact</span></a></li>
+      </ul>
+    </div>
+    <!--!SECTION SOCIAL MEDIA --> 
+    <div class="social-media">
+      <ul>
+        <li><a href="https://www.facebook.com/florahibberdmusic/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://www.instagram.com/florahibberd/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://flora-hibberd.bandcamp.com/" target="_blank"><i class="fab fa-bandcamp"></i></a></li>
+        <li><a href="https://open.spotify.com/artist/5EFG7rqfVfdyaXiRZbRkpS?si=Ganf8-mTS1-4J-p5FWeIcA" target="_blank"><i class="fab fa-spotify"></i></a></li>
+      </ul>   
+    </div>
+    <!--!SECTION MAIN CONTENT -->
+    <div id="mainContent"class="main-content">
+      <!--? BIO SECTION -->
+      <div id="bioPicContainerBig" class="bio-pic-container-big">
+        <img id="bioPicBig" class="bio-pic-big" src="media/bioPic.jpg" alt="Flora">
+      </div>
+      <div id="bioPicContainerSmall" class="bio-pic-container-small">
+        <img id="bioPicSmall" class="bio-pic-small" src="media/bioPic2.jpg" alt="Flora">
+      </div>
+      <!-- YELLOW PIC -->
+      <div id="titlePic" class="title-pic">
+        <img id='titleBig'class="title-yellow-big" src="media/titleYellow.png">
+      </div>
+      <!--? MUSIC SECTION -->
+      <div id="galleryAlbums" class="gallery-albums" style="display: none;">
+        <div id="bigBox" class="album-flora">
+        </div>
+        <div id="topLeftBox" class="album-yellow">     
+        </div>
+        <div id="topRightBox" class="album-tree">
+        </div>
+        <div id="bottomLeftBox" class="album-flora">
+        </div>  
+        <div id="bottomRightBox" class="album-hand">
+        </div>
+      </div>
+      <!-- YELLOW PIC -->
+      <div id="titlePicGallery" class="title-pic-gallery" style="display:none;">
+        <img id='titleBigGallery' class="title-big-gallery" src="media/titleYellow.png">
+      </div>
+      <!-- YELLOW PICS -  SMALL SCREENS -->
+      <div id="titlePicsPhone" class="title-pics-phone">
+        <img id="pic1Phone" class="pic1-phone"src="media/title-yellow1.png" alt="">
+        <img id="pic2Phone" class="pic2-phone" src="media/title-yellow2.png" alt="">
+      </div>
+      <!--? VIDEO SECTION -->
+      <div class="video-gallery" id="videoGallery"style="display: none;">
+        <div class="video-container">
+          <video id='video1' class="video" src="media/video-flora.mp4" poster="media/imgVideo2.jpg">
+          </video>
+          <div class="controls">
+            <div class="bar">
+              <div class="juice"></div>
+            </div>
+            <div class="buttons" >
+              <button id="buttons" class="playPause">
+                <div id="playContainer">
+                  <i id="play" class="play fas fa-play "></i>
+                </div>
+                <div id="pauseContainer" style="display:none;">          
+                  <i id="pause" class="pause fas fa-pause"></i>
+                </div>
+              </button>
+              <div id="stopButton" class="stop">
+              </div>
+            </div>        
+          </div>
+          <div id="nextButton" class="next-button">
+            <div id="iconArrowRight" class="arrow">
+              <i class="fa fa-long-arrow-alt-right "></i>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- YELLOW PIC -->
+      <div id="titlePicVideo" class="title-pic-video" style="display:none;">
+        <img id='titleBigVideo' class="title-big-video" src="media/titleYellow.png">
+      </div>
+      <!--? CONTACT SECTION -->
+      <form action="POST" data-netlify="true" id="contactSection" class="contact-container" style="display:none;">
+        <div class="contact-name">
+          <input type="text" class="form-control" placeholder="YOUR NAME" name="name">
+        </div>
+        <div class="contact-email">
+          <input type="email" class="form-control" placeholder="YOUR EMAIL" name="email">
+        </div>
+        <div class="contact-message">
+          <textarea class="form-control" placeholder="YOUR MESSAGE" rows="5" name="message"></textarea>
+        </div>
+        <input type="submit" value="SUBMIT" class="btn">
+      </form>
+      <div id="stoneContainer" class="stone-container" style="display: none;">
+        <p class="stone-play" id="stonePlay">PLAY</p>
+        <a href="#">
+          <img src="media/ilstone.png" alt="amplificadorImg" id= "stone" class="illustration-stone">
+        </a>
+        <audio id="audioStone">
+          <source src="media/iLetYouGo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+<script src="app.js"></script>
+</body> 
+</html>
